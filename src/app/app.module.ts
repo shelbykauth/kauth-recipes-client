@@ -7,16 +7,9 @@ import { MainComponent } from './components/views/main/main.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainComponent,
-    SideMenuComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, MainComponent, SideMenuComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
