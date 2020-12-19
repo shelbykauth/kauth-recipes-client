@@ -1,0 +1,49 @@
+@import "./colors.vars.less";
+
+.div-with-border() {
+  // display: inline-flex;
+  border: 2px solid #colors.cupcake[border];
+  border-radius: 15px;
+  box-shadow: 10px 7px 5px #colors.cupcake[box-shadow];
+  box-sizing: border-box;
+  margin: 7.5px;
+}
+
+.wrapper {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  .div-with-border;
+  background-color: #colors.cupcake[menu-bg];
+  background-image: url("~/../../assets/img/Kauths_Old.gif");
+  background-repeat: no-repeat;
+  min-width: 90%;
+  flex-grow: 1;
+  color: #colors.cupcake[text-dark];
+  p {
+    float: right;
+    font-family: "FreeStyle Script";
+    font-size: 75px;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  display: inline-block;
+  .div-with-border;
+  background-color: #colors.cupcake[menu-bg];
+  width: 30%;
+  min-height: 200px;
+}
+
+.main {
+  display: inline-block;
+  .div-with-border;
+  background-color: #colors.cupcake[recipe-bg];
+  min-height: 200px;
+  flex-grow: 3;
+}
