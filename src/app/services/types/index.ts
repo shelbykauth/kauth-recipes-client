@@ -1,1 +1,2 @@
-export { Recipe, RecipeType } from './recipe.type';
+export { Recipe, RecipeFactory } from './recipe.type';
+export { Ingredient, IngredientFactory } from './ingredient.type';

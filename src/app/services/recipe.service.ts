@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 import { take, map, tap } from 'rxjs/operators';
-import { Recipe } from './types';
-import { RecipeType } from './types/recipe.type';
+import { Recipe, RecipeFactory } from './types';
 
 @Injectable({
   providedIn: 'root',
@@ -22,8 +21,8 @@ export class RecipeService {
       .get('/assets/data/original-recipes.json')
       .pipe(
         take(1),
-        map((data) => data as RecipeType[]),
-        map((data) => data.map((recipe) => new Recipe(recipe))),
+        map((data) => data as Recipe[]),
+        map((data) => data.map((recipe) => RecipeFactory(recipe))),
         tap((recipes) => this._allItems.next(recipes))
       )
       .subscribe();
