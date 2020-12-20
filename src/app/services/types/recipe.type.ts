@@ -1,7 +1,8 @@
 import { v4 as uuid } from 'uuid';
+import { HasName } from './has-name.type';
 import { Ingredient, IngredientFactory } from './ingredient.type';
 
-export type Recipe = {
+export type Recipe = HasName & {
   id: string;
   name: string;
   slug: string;

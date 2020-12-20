@@ -31,11 +31,25 @@ export class RecipeService {
       .pipe(
         take(1),
         map((data) => data as Recipe[]),
+        tap((data) =>
+          data.forEach((recipe) =>
+            recipe.ingredients.forEach((ingredient, index) => {
+              if (ingredient.link) {
+                console.log(ingredient.link);
+                ingredient.linkedItem = this.findOneBySlug(ingredient.link.id);
+              }
+            })
+          )
+        ),
         map((data) => data.map((recipe) => RecipeFactory(recipe))),
         tap((recipes) => from(recipes).pipe(this.addItemPipe).subscribe()),
         tap((recipes) => this._allItems.next(recipes))
       )
       .subscribe();
+  }
+
+  findOneBySlug(identifier: string): Observable<Recipe> {
+    return this.findBySlug(identifier).pipe(map((items) => items[0]));
   }
 
   findBySlug(identifier: string): Observable<Recipe[]> {
