@@ -1,5 +1,5 @@
 export type Ingredient = {
-  measure?: string;
+  measure: string;
   name: string;
 };
 

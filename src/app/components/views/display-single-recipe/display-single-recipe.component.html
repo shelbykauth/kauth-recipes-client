@@ -1,0 +1,12 @@
+<ng-template [ngIf]="recipe">
+  <b>{{ recipe.name }}</b>
+  <br />
+  <br />
+  <ng-template ngFor let-ingredient [ngForOf]="recipe.ingredients">
+    {{ ingredient.measure }} {{ ingredient.name }}
+  </ng-template>
+
+  <ng-template ngFor let-step [ngForOf]="recipe.directions">
+    {{ step }}
+  </ng-template>
+</ng-template>
