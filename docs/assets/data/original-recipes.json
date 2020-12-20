@@ -1,0 +1,307 @@
+[
+  {
+    "id": "a7ca09bb-f294-494a-b762-484e38da12c6",
+    "slug": "cheesecake",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Cheesecake",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 (6 oz)", "name": "Graham Cracker Crust" },
+      {
+        "measure": "1 (8 0z) Package",
+        "name": "Cream cheese (softened)"
+      },
+      { "measure": "1 (14 oz) can", "name": "sweetened condensed milk" },
+      { "measure": "1/3 cup", "name": "reconstituted lemon juice" },
+      { "measure": "1 (21 oz) can", "name": "cherry pie filling chilled" }
+    ],
+    "directions": [
+      "In medium bowl, beat cream cheese until fluffy. Add condensed milk; mix thoroughly. Stir in lemon juice and vanilla. Pour into crust. Chill 2 hours. top with cherry pie filling before serving. Refrigerate. Lid can be used to cover pie and store."
+    ]
+  },
+  {
+    "id": "f38431b5-dfc2-491a-822b-7c8be8339415",
+    "slug": "thumbprint-cookies",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Thumbprint Cookies",
+    "description": "",
+    "ingredients": [
+      { "measure": "1/2 cup", "name": "shortening (half butter)" },
+      { "measure": "1/4 cup", "name": "brown sugar" },
+      { "measure": "1/2 teaspoon", "name": "vanilla" },
+      { "measure": "1/4 teaspoon", "name": "salt" },
+      { "measure": "1", "name": "egg yolk" },
+      { "measure": "1 cup", "name": "flour" }
+    ],
+    "directions": [
+      "Roll into balls. Dip in slightly beaten egg white. Roll in finely chopped nuts.",
+      "Bake 12 minutes 375º"
+    ]
+  },
+  {
+    "id": "bd5269f8-0d14-4bad-b520-a53849dc23ca",
+    "slug": "pecan-fingers",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Pecan Fingers",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 cup", "name": "butter" },
+      { "measure": "1 teaspoon", "name": "vanilla" },
+      { "measure": "2 cups", "name": "flour" },
+      { "measure": "2 cups", "name": "pecans" },
+      { "measure": "1/4 cup", "name": "powdered sugar" },
+      { "measure": "1 tablespoon", "name": "water" },
+      { "measure": "1/4 teaspoon", "name": "salt" }
+    ],
+    "directions": [
+      "Cream butter. Add sugar, vanilla, and water. Add flour & nuts. chill 1 hour. Shape like finger. Place on greased cookie sheet.",
+      "Bake at 250º for 1 hour"
+    ]
+  },
+  {
+    "id": "703b331b-aa89-4c3c-a59c-4f907290b52d",
+    "slug": "mexican-wedding-cakes",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Mexican Wedding Cakes",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 cup", "name": "butter" },
+      { "measure": "2 cups", "name": "flour" },
+      { "measure": "1 teaspoon", "name": "vanilla" },
+      { "measure": "1/2 cup", "name": "powdered sugar" },
+      { "measure": "1/4", "name": "teaspoon salt" }
+    ],
+    "directions": [
+      "Cream butter. Add powdered sugar and cream until smooth. Add flour, salt, and vanilla (mixture is stiff). Pinch off small pieces of dough. Place on ungreased cookie sheet. Bake at 400º for about 12 minutes. Roll cookies in powdered sugar immediately after removing from oven. Makes about 4 dozen."
+    ]
+  },
+  {
+    "id": "2e05e45d-d70b-472d-97ae-415033ec7082",
+    "slug": "sloppy-joes",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Sloppy Joes",
+    "description": "",
+    "ingredients": [
+      { "measure": "1", "name": "onion" },
+      { "measure": "1 tablespoon", "name": "brown sugar" },
+      { "measure": "1 tablespoon", "name": "mustard" },
+      {
+        "measure": "1 tablespoon",
+        "name": "Worcestershire sauce (can substitute soy sauce)"
+      },
+      { "measure": "1/2 cup", "name": "water" },
+      { "measure": "1/4 cup", "name": "ketchup" },
+      { "measure": "1/2 cup", "name": "tomato soup" },
+      { "measure": "1 pound", "name": "hamburger" }
+    ],
+    "directions": []
+  },
+  {
+    "id": "c8931859-4021-43dd-aa7b-4e07e61ad652",
+    "slug": "salad-dressing-chocolate-cake",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Salad Dressing Chocolate Cake",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 cup", "name": "sugar" },
+      { "measure": "1", "name": "salad dressing" },
+      { "measure": "1 cup", "name": "water" },
+      { "measure": "2 teaspoon", "name": "baking soda" },
+      { "measure": "1/4 cup", "name": "cocoa" },
+      { "measure": "2 cup", "name": "flour" },
+      { "measure": "3 teaspoon", "name": "vanilla" }
+    ],
+    "directions": [
+      "Bake at 350º for 30 minutes (cup cakes)",
+      "Bake at 350º for 45 minutes (cake)"
+    ]
+  },
+  {
+    "id": "38267bd5-54b6-4e29-a1eb-95fbbcaae6cc",
+    "slug": "chocolate-frosting",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Chocolate Frosting",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 stick or 1/2 cup", "name": "margarine" },
+      { "measure": "8 oz", "name": "cream cheese" },
+      { "measure": "1 1/2 cup", "name": "powdered sugar" },
+      { "measure": "1 tablespoon", "name": "vanilla" }
+    ],
+    "directions": []
+  },
+  {
+    "id": "57028f8a-935b-44a5-a6ff-32219d1d7867",
+    "slug": "tater-tot-casserole",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Tater Tot Casserole",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 lb", "name": "Ground Beef" },
+      { "measure": "3 cans", "name": "Cream of mushroom soup" },
+      { "measure": "2 can", "name": "French Style Green Beans" },
+      { "measure": "1 bag", "name": "Tator Tots" },
+      { "measure": "1 can", "name": "French's Dried Onions" },
+      { "measure": "1 lb", "name": "Shredded Cheese (Colby works best)" }
+    ],
+    "directions": [
+      "Preheat oven to 305°",
+      "Fry your hamburger. Drain it well. Mix the ground beef, cream of mushroom soup, and green beans in the bottom of a casserole dish. Put a single layer of tator tots over the dish. Make sure you cover all of it. Bake for 35 minutes - 1 hour (Generally follow the instructions on the tator tots). At the last 5-10 minutes of cooking add your dried onions and cover them with cheese. Bake until the cheese is melted. Let sit for 5 to 10 minutes to thicken. (If you do not wait it will run and not come out neatly. Besides it is too hot to eat anyway).",
+      "*Note: Always put the onions on UNDER the cheese or they will burn."
+    ]
+  },
+  {
+    "id": "72f15492-fad7-4b2c-98b3-fc59569530ca",
+    "slug": "pork-chops",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Pork Chops",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 pkg", "name": "Pork Chops/Beef" },
+      { "measure": "1", "name": "Chopped Onion" },
+      { "name": "Flour" },
+      { "name": "Salt" },
+      { "name": "Pepper" },
+      { "name": "Cooking Oil or Spray" },
+      { "name": "Bullion (If you have it)" },
+      { "name": "Water" }
+    ],
+    "directions": [
+      "Preheat Oven to 350°",
+      "Put the flour in a shallow dish and salt and pepper to taste. Rinse the pork chops under running water. Some people prefer to pat dry after. Dip Pork Chops in flour. Brown Pork Chops in a hot skillet (light greased so they do not stick). Place Pork Chops in baking pan (lightly greased so they do not stick). Place sliced onion on top of the pork chops. Cover them with water or bullion, just enough to cover the meat. (You can add about 4 bullion cubes if you have them).",
+      "This recipe makes the gravy while you are cooking your pork chops. I personally like to serve my gravy over mashed potatoes.",
+      "Bake at 350° for about 2 hours, when meat is tender it is done.",
+      "*Note: (It tastes even better when you cook Pork and Beef together)"
+    ]
+  },
+  {
+    "id": "90c1d4a1-8dbe-4b54-800c-42325f1e1236",
+    "slug": "lasagna",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Lasagna",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 (12 oz) pkg", "name": "Lasagna (12 noodles)" },
+      { "measure": "30 oz", "name": "Ricotta Cheese" },
+      {
+        "measure": "2 Cups",
+        "name": "Shredded Mozzarella Cheese, divided"
+      },
+      {
+        "measure": "1/2 cup",
+        "name": "fresh grated Parmesan cheese, divided"
+      },
+      { "measure": "2", "name": "eggs, slightly beaten" },
+      { "measure": "1/4 cup", "name": "fresh chopped parsley" },
+      { "measure": "1 tsp", "name": "dried basil" },
+      { "measure": "54 oz", "name": "tomotaoe sauce" },
+      { "measure": "1 cup", "name": "water" },
+      {
+        "measure": "1 lb",
+        "name": "ground beef or bulk Italian sausage, cooked and drained"
+      }
+    ],
+    "directions": [
+      "In medium bowl, combine ricotta, 1 cup mozzarella cheese, 1/4 cup Parmesan cheese, eggs, parsley and basil. Mix well. In another medium bowl, combine tomato sauce, water and browned meat; mix well. In 9\" x 13\" pan, spread 1 1/2 cups of meat sauce. Place 1/3 of the Lasanga noodles (4) over sauce. Spread 1/2 of the cheese mixture over Lasagna; top with 1/2 of the meat sauce. Repeat layering once. Top with remaining lasagna, then sauce. Spring with remaining mozzarella and Parmesan cheese. Cover the lasagna tightly with foil. Bake for 45 to 50 minutes. Let stand for 10 minutes sealed in the foil before cutting and serving. Makes 9 to 12 servings."
+    ]
+  },
+  {
+    "id": "524d5c09-6fbc-426a-b9bc-4ab3c234b0c5",
+    "slug": "vanilla-butter-cream-frosting",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Vanilla Butter Cream Frosting",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 lb", "name": "butter" },
+      {
+        "measure": "2 lb",
+        "name": " powdered sugar (3 3/4 cups unsifted powdered sugar = 1 lb)"
+      },
+      { "measure": "1 Tbsp", "name": "vanilla extract" },
+      { "measure": "1 Tbsp", "name": "milk" }
+    ],
+    "directions": [
+      "whip butter, add sugar slowly, add vanilla and milk, beat until smooth"
+    ]
+  },
+  {
+    "id": "fbac9126-941a-46d4-b42d-04d1c51540c9",
+    "slug": "cake-pops",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Cake Pops",
+    "description": "Cake pops are a festive treat for any holiday. There are infinite ways to shape and decorate them for any occasion.",
+    "ingredients": [
+      { "measure": "1", "name": "cooked 9x13 inch box cake mix" },
+      {
+        "measure": "1 batch",
+        "link": {
+          "type": "recipe",
+          "id": "524d5c09-6fbc-426a-b9bc-4ab3c234b0c5"
+        }
+      }
+    ],
+    "directions": [
+      "Combine cake in mixer (or by hand) with butter cream frosting, just enough so that cake will hold a ball shape when rolled (approx. 2/3 cup).",
+      "Portion mixture into 1oz portions using 1oz scoop",
+      "Using hands roll them into small little balls, make sure they are round and smooth with no cracks. If there are cracks add more butter cream frosting.",
+      "Chill cake balls in refrigerator for 20 minutes prior to dipping."
+    ]
+  },
+  {
+    "id": "84f7f053-a599-44bd-93d0-e0e13ac61c97",
+    "slug": "peanut-butter-cookies",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Peanut Butter Cookies",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 cup", "name": "butter" },
+      { "measure": "1 cup", "name": "peanut butter" },
+      { "measure": "1 cup", "name": "sugar" },
+      { "measure": "1 cup", "name": "brown sugar" },
+      { "measure": "2", "name": "eggs" },
+      { "measure": "2 1/2 cups", "name": "all-purpose flour" },
+      { "measure": "1/2 teaspoon", "name": "salt" },
+      { "measure": "1 teaspoon", "name": "baking powder" },
+      { "measure": "1 1/2 teaspoon", "name": "baking soda" }
+    ],
+    "directions": [
+      "Cream together butter, peanut butter and sugars. Beat in eggs.",
+      "In a separate bowl, sift together flour, baking powder, baking soda, and salt. Stir into batter. Put batter in refrigerator for 1 hour.",
+      "Roll into balls and put on baking sheets. Flatten each ball with a fork, making a criss-cross pattern. Bake in a preheated 375º oven for about 10 minutes or until cookies begin to brown. Do not overbake.",
+      "Bake at 375º for 10 minutes"
+    ]
+  },
+  {
+    "id": "965c64f1-98b7-4d06-a420-95f4579013ae",
+    "slug": "cabbage-rolls",
+    "authors": [{ "name": "Marie Kauth" }],
+    "name": "Cabbage Rolls",
+    "description": "",
+    "ingredients": [
+      { "measure": "1 Head", "name": "Cabbage" },
+      {
+        "measure": "2 lbs",
+        "name": "Hamburger (Groud Sirloin or Groud Round)"
+      },
+      { "measure": "1 Cup", "name": "Rice (Minute Rice is Ok)" },
+      { "measure": "2", "name": "Eggs" },
+      { "measure": "1", "name": "Onion (Finely Chopped)" },
+      { "measure": "1 Squirt", "name": "Ketchup" },
+      { "measure": "", "name": "Salt" },
+      { "measure": "", "name": "Pepper" },
+      {
+        "measure": "1 teaspoon",
+        "name": "Sugar (Removes Bitterness From Cabbage)"
+      },
+      { "measure": "2 Large Cans", "name": "Tomato Juice (Campbell's)" }
+    ],
+    "directions": [
+      "Mix Hamburger, Rice, Eggs, Onion, Ketchup, Salt, Pepper, and Sugar",
+      "Simmer Cabbage Upside Down, holding by the stem. As leaves soften cut away from stem using a sharp knife and remove from pan. Lay them on a cookie sheet.",
+      "Roll meat mix in loosely in cabbage leaves, folding both sides of leaves in as you roll. Put end of roll down, or hold with toothpicks.",
+      "Warning: Rolling tightly will cause hard rock like balls, do NOT do it.",
+      "Put in Roasting Pan and pour tomato juice over the top",
+      "Bake 3 hours at 350°"
+    ]
+  }
+]
