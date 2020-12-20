@@ -10,6 +10,11 @@
   padding: 10px;
 }
 
+div.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .wrapper {
   max-width: 950px;
   margin: auto;
@@ -37,7 +42,7 @@ recipes-side-menu {
   display: inline-block;
   .div-with-border;
   background-color: #colors.cupcake[menu-bg];
-  width: 30%;
+  max-width: 30%;
   min-height: 200px;
 }
 
@@ -47,5 +52,6 @@ recipes-side-menu {
   background-color: #colors.cupcake[recipe-bg];
   color: #colors.cupcake[text-light];
   min-height: 200px;
+  max-width: 65%;
   flex-grow: 3;
 }
