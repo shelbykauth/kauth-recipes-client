@@ -8,7 +8,7 @@ import {
 
 const routes: Routes = [
   { path: 'home', component: MainComponent },
-  { path: 'r/:id', component: DisplaySingleRecipeComponent },
+  { path: 'r/:slug', component: DisplaySingleRecipeComponent },
   { path: 'search/:searchTerm', component: SearchComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
 ];

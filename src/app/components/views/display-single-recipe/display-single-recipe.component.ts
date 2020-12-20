@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { tap } from 'rxjs/operators';
+import { mergeMap, pluck, tap } from 'rxjs/operators';
 import { Recipe, RecipeService } from '~/services';
 
 @Component({
@@ -10,18 +10,22 @@ import { Recipe, RecipeService } from '~/services';
   styleUrls: ['./display-single-recipe.component.less'],
 })
 export class DisplaySingleRecipeComponent implements OnInit, OnDestroy {
-  private _slug?: string;
-  get slug() {
-    return this._slug;
-  }
-  set slug(value) {
-    if (!value) {
-      this.recipe = undefined;
-      this.slug = undefined;
-      return;
-    }
-    this._slug = value;
-    let pipe = this.recipeService.findBySlug(this._slug).pipe(
+  recipe?: Recipe;
+
+  private slug: string = '';
+  private subscriptions = new Subscription();
+
+  constructor(
+    private recipeService: RecipeService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    let navPipe = this.route.params.pipe(
+      pluck('slug'),
+      tap((slug) => (this.slug = slug)),
+      mergeMap((slug) => this.recipeService.findBySlug(slug)),
       tap((recipes) => {
         switch (recipes.length) {
           case 0:
@@ -31,19 +35,12 @@ export class DisplaySingleRecipeComponent implements OnInit, OnDestroy {
             this.recipe = recipes[0];
             return;
           default:
-            this.router.navigate(['search', this._slug]);
+            this.router.navigate(['search', this.slug]);
         }
       })
     );
-    this.subscriptions.add(pipe.subscribe());
+    this.subscriptions.add(navPipe.subscribe());
   }
-  recipe?: Recipe;
-
-  private subscriptions = new Subscription();
-
-  constructor(private recipeService: RecipeService, private router: Router) {}
-
-  ngOnInit(): void {}
 
   ngOnDestroy(): void {
     this.subscriptions.unsubscribe();

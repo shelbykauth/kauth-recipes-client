@@ -1,12 +1,17 @@
-<ng-template [ngIf]="recipe">
+<ng-template [ngIf]="recipe" [ngIfElse]="noRecipeSorry">
   <b>{{ recipe.name }}</b>
   <br />
   <br />
   <ng-template ngFor let-ingredient [ngForOf]="recipe.ingredients">
     {{ ingredient.measure }} {{ ingredient.name }}
+    <br />
   </ng-template>
-
+  <br />
   <ng-template ngFor let-step [ngForOf]="recipe.directions">
-    {{ step }}
+    <p>{{ step }}</p>
   </ng-template>
+</ng-template>
+
+<ng-template #noRecipeSorry>
+  <p>There doesn't seem to be a recipe here...</p>
 </ng-template>
