@@ -1,6 +1,7 @@
 [
   {
     "id": "a7ca09bb-f294-494a-b762-484e38da12c6",
+    "slug": "cheesecake",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Cheesecake",
     "description": "",
@@ -20,6 +21,7 @@
   },
   {
     "id": "f38431b5-dfc2-491a-822b-7c8be8339415",
+    "slug": "thumbprint-cookies",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Thumbprint Cookies",
     "description": "",
@@ -38,6 +40,7 @@
   },
   {
     "id": "bd5269f8-0d14-4bad-b520-a53849dc23ca",
+    "slug": "pecan-fingers",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Pecan Fingers",
     "description": "",
@@ -57,6 +60,7 @@
   },
   {
     "id": "703b331b-aa89-4c3c-a59c-4f907290b52d",
+    "slug": "mexican-wedding-cakes",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Mexican Wedding Cakes",
     "description": "",
@@ -73,6 +77,7 @@
   },
   {
     "id": "2e05e45d-d70b-472d-97ae-415033ec7082",
+    "slug": "sloppy-joes",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Sloppy Joes",
     "description": "",
@@ -93,6 +98,7 @@
   },
   {
     "id": "c8931859-4021-43dd-aa7b-4e07e61ad652",
+    "slug": "salad-dressing-chocolate-cake",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Salad Dressing Chocolate Cake",
     "description": "",
@@ -112,6 +118,7 @@
   },
   {
     "id": "38267bd5-54b6-4e29-a1eb-95fbbcaae6cc",
+    "slug": "chocolate-frosting",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Chocolate Frosting",
     "description": "",
@@ -125,6 +132,7 @@
   },
   {
     "id": "57028f8a-935b-44a5-a6ff-32219d1d7867",
+    "slug": "tater-tot-casserole",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Tater Tot Casserole",
     "description": "",
@@ -144,6 +152,7 @@
   },
   {
     "id": "72f15492-fad7-4b2c-98b3-fc59569530ca",
+    "slug": "pork-chops",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Pork Chops",
     "description": "",
@@ -167,6 +176,7 @@
   },
   {
     "id": "90c1d4a1-8dbe-4b54-800c-42325f1e1236",
+    "slug": "lasagna",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Lasagna",
     "description": "",
@@ -197,6 +207,7 @@
   },
   {
     "id": "524d5c09-6fbc-426a-b9bc-4ab3c234b0c5",
+    "slug": "vanilla-butter-cream-frosting",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Vanilla Butter Cream Frosting",
     "description": "",
@@ -215,6 +226,7 @@
   },
   {
     "id": "fbac9126-941a-46d4-b42d-04d1c51540c9",
+    "slug": "cake-pops",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Cake Pops",
     "description": "Cake pops are a festive treat for any holiday. There are infinite ways to shape and decorate them for any occasion.",
@@ -237,6 +249,7 @@
   },
   {
     "id": "84f7f053-a599-44bd-93d0-e0e13ac61c97",
+    "slug": "peanut-butter-cookies",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Peanut Butter Cookies",
     "description": "",
@@ -260,6 +273,7 @@
   },
   {
     "id": "965c64f1-98b7-4d06-a420-95f4579013ae",
+    "slug": "cabbage-rolls",
     "authors": [{ "name": "Marie Kauth" }],
     "name": "Cabbage Rolls",
     "description": "",
