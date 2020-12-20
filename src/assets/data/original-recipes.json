@@ -157,14 +157,14 @@
     "name": "Pork Chops",
     "description": "",
     "ingredients": [
-      { "measure": "1 pkg Pork Chops/Beef" },
-      { "measure": "1 Chopped Onion" },
-      { "measure": "Flour" },
-      { "measure": "Salt" },
-      { "measure": "Pepper" },
-      { "measure": "Cooking Oil or Spray" },
-      { "measure": "Bullion (If you have it)" },
-      { "measure": "Water" }
+      { "measure": "1 pkg", "name": "Pork Chops/Beef" },
+      { "measure": "1", "name": "Chopped Onion" },
+      { "name": "Flour" },
+      { "name": "Salt" },
+      { "name": "Pepper" },
+      { "name": "Cooking Oil or Spray" },
+      { "name": "Bullion (If you have it)" },
+      { "name": "Water" }
     ],
     "directions": [
       "Preheat Oven to 350°",
@@ -212,13 +212,13 @@
     "name": "Vanilla Butter Cream Frosting",
     "description": "",
     "ingredients": [
-      { "measure": "1 lb butter" },
+      { "measure": "1 lb", "name": "butter" },
       {
-        "measure": "2 lb powdered sugar (3 3/4 cups",
-        "name": "unsifted powdered sugar = 1 lb)"
+        "measure": "2 lb",
+        "name": " powdered sugar (3 3/4 cups unsifted powdered sugar = 1 lb)"
       },
-      { "measure": "1 Tbsp vanilla extract" },
-      { "measure": "1 Tbsp milk" }
+      { "measure": "1 Tbsp", "name": "vanilla extract" },
+      { "measure": "1 Tbsp", "name": "milk" }
     ],
     "directions": [
       "whip butter, add sugar slowly, add vanilla and milk, beat until smooth"
@@ -234,7 +234,7 @@
       { "measure": "1", "name": "cooked 9x13 inch box cake mix" },
       {
         "measure": "1 batch",
-        "name": {
+        "link": {
           "type": "recipe",
           "id": "524d5c09-6fbc-426a-b9bc-4ab3c234b0c5"
         }
