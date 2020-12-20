@@ -7,7 +7,7 @@ import { RecipeService } from '~services/recipe.service';
   styleUrls: ['./main.component.less'],
 })
 export class MainComponent implements OnInit {
-  constructor(private reicpeService: RecipeService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }
