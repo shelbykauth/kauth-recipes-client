@@ -1,1 +1,3 @@
-side-menu works!
+<ng-template ngFor let-recipe [ngForOf]="recipes | async">
+  <a>{{ recipe.name }}</a>
+</ng-template>

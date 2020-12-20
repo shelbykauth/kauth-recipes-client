@@ -1,7 +1,11 @@
-export type RecipeType = {};
+export type RecipeType = {
+  id?: string;
+  name: string;
+};
 
 export class Recipe implements RecipeType {
+  name: string;
   constructor(attr: RecipeType) {
-    return attr;
+    this.name = attr.name;
   }
 }

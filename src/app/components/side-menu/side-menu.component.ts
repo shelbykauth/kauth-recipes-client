@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipeService } from '~/services';
+import { Observable } from 'rxjs';
+import { Recipe, RecipeService } from '~/services';
 
 @Component({
   selector: 'recipes-side-menu',
@@ -7,7 +8,10 @@ import { RecipeService } from '~/services';
   styleUrls: ['./side-menu.component.less'],
 })
 export class SideMenuComponent implements OnInit {
-  constructor(private recipeService: RecipeService) {}
+  recipes: Observable<Recipe[]>;
+  constructor(private recipeService: RecipeService) {
+    this.recipes = recipeService.allItems;
+  }
 
   ngOnInit(): void {}
 }
