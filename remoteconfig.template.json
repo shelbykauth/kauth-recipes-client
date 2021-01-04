@@ -1,1 +1,10 @@
-{}
+{
+  "parameters": {
+    "useRealApi": {
+      "defaultValue": "false"
+    },
+    "apiUrl": {
+      "defaultValue": "/assets/data"
+    }
+  }
+}
