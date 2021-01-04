@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, from, Observable } from 'rxjs';
 import { take, map, tap } from 'rxjs/operators';
 import { Recipe, RecipeFactory } from './types';
+import { ConfigService } from './config.service';
 
 @Injectable({
   providedIn: 'root',
@@ -17,7 +18,7 @@ export class RecipeService {
     this._itemsById[recipe.slug] = recipe;
   });
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private config: ConfigService) {
     this.loadAllRecipes();
     this.findBySlug('cake').subscribe((recipes) => console.log(recipes));
     this.allItems
