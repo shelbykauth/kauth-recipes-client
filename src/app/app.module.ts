@@ -18,7 +18,7 @@ import { SearchComponent } from './components/views/search/search.component';
     DisplaySingleRecipeComponent,
     SearchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/recipes' }],
   bootstrap: [AppComponent],
 })
