@@ -1,0 +1,7 @@
+{
+  "root": "dist/recipe-sharing-client/",
+  "routes": {
+    "/assets/*": "/assets/",
+    "/**": "index.html"
+  }
+}
