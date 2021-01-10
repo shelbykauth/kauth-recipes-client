@@ -19,7 +19,7 @@ import { SearchComponent } from './components/views/search/search.component';
     SearchComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/recipes' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
