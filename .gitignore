@@ -49,3 +49,6 @@ Thumbs.db
 # Private/Transient Data
 mock-api/db.json
 mock-api/snapshots
+
+# Configs
+appConfig.js
