@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, from, Observable } from 'rxjs';
 import { take, map, tap } from 'rxjs/operators';
 import { Recipe, RecipeFactory } from './types';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root',
@@ -17,7 +17,7 @@ export class RecipeService {
     this._itemsById[recipe.slug] = recipe;
   });
 
-  constructor(private http: HttpClient) {
+  constructor(private api: ApiService) {
     this.loadAllRecipes();
     this.findBySlug('cake').subscribe((recipes) => console.log(recipes));
     this.allItems
@@ -26,8 +26,8 @@ export class RecipeService {
   }
 
   loadAllRecipes() {
-    this.http
-      .get('/assets/data/original-recipes.json')
+    this.api
+      .getData('recipes')
       .pipe(
         take(1),
         map((data) => data as Recipe[]),
