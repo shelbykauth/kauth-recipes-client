@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "mock-api": "json-server mock-api/db.json",
     "build": "ng build",
     "test": "ng test",
     "test:cli": "ng test --browsers=ChromeHeadless --watch=false",
@@ -38,6 +39,7 @@
     "husky": "^4.3.6",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
+    "json-server": "^0.17.0",
     "karma": "~5.1.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",

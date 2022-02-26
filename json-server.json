@@ -1,0 +1,4 @@
+{
+  "routes": "./mock-api/routes.json",
+  "snapshots": "./mock-api/snapshots/"
+}
