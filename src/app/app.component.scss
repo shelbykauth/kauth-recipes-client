@@ -1,8 +1,8 @@
 @mixin div-with-border {
   // display: inline-flex;
-  border: 2px solid --var(--color-border);
+  border: 2px solid var(--color-border);
   border-radius: 15px;
-  box-shadow: 10px 7px 5px --var(--color-box-shadow);
+  box-shadow: 10px 7px 5px var(--color-box-shadow);
   box-sizing: border-box;
   margin: 7.5px;
   padding: 10px;
@@ -26,10 +26,10 @@ div.row {
 
 header {
   @include div-with-border();
-  background-color: --var(--color-menu-bg);
+  background-color: var(--color-menu-bg);
   min-width: 90%;
   flex-grow: 1;
-  color: --var(--color-text-dark);
+  color: var(--color-text-dark);
   p {
     text-align: center;
     font-family: "FreeStyle Script";
@@ -42,7 +42,7 @@ header {
 recipes-side-menu {
   display: inline-block;
   @include div-with-border();
-  background-color: --var(--color-menu-bg);
+  background-color: var(--color-menu-bg);
   max-width: 30%;
   min-height: 200px;
 }
@@ -50,8 +50,8 @@ recipes-side-menu {
 .main {
   display: inline-block;
   @include div-with-border();
-  background-color: --var(--color-recipe-bg);
-  color: --var(--color-text-light);
+  background-color: var(--color-recipe-bg);
+  color: var(--color-text-light);
   min-height: 200px;
   max-width: 65%;
   flex-grow: 3;

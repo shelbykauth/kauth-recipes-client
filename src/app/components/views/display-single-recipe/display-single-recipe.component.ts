@@ -7,7 +7,7 @@ import { Recipe, RecipeService } from '~/services';
 @Component({
   selector: 'recipes-display-single-recipe',
   templateUrl: './display-single-recipe.component.html',
-  styleUrls: ['./display-single-recipe.component.less'],
+  styleUrls: ['./display-single-recipe.component.scss'],
 })
 export class DisplaySingleRecipeComponent implements OnInit, OnDestroy {
   recipe?: Recipe;

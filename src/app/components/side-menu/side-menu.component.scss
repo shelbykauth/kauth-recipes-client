@@ -1,0 +1,16 @@
+a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.2em auto;
+  padding: 0.2em 0.8em;
+  border-radius: 0.8em;
+  color: var(--color-text-light);
+  background-color: var(--color-recipe-bg);
+  text-decoration: none;
+  &:hover,
+  &.active {
+    color: var(--color-text-dark);
+    background-color: var(--color-text-light);
+  }
+}

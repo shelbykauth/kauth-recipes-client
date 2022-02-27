@@ -5,7 +5,7 @@ import { Recipe, RecipeService } from '~/services';
 @Component({
   selector: 'recipes-side-menu',
   templateUrl: './side-menu.component.html',
-  styleUrls: ['./side-menu.component.less'],
+  styleUrls: ['./side-menu.component.scss'],
 })
 export class SideMenuComponent implements OnInit {
   recipes: Observable<Recipe[]>;
