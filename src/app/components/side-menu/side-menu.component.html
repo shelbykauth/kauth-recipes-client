@@ -1,3 +1,7 @@
+<a [routerLink]="'search/'">Search for a Recipe</a>
+<a [routerLink]="'r/add'">Add a Recipe</a>
+<a [routerLink]="'lists'">Curations List</a>
+<hr />
 <ng-template ngFor let-recipe [ngForOf]="recipes | async">
   <a [routerLink]="['r', recipe.slug]" routerLinkActive="active">
     {{ recipe.name }}
