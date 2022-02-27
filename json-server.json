@@ -1,4 +1,5 @@
 {
   "routes": "./mock-api/routes.json",
-  "snapshots": "./mock-api/snapshots/"
+  "snapshots": "./mock-api/snapshots/",
+  "watch": true
 }
