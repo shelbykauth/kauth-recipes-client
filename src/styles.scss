@@ -3,3 +3,17 @@
 body {
   background-color: var(--color-body-bg);
 }
+
+form {
+  label {
+    display: inline-block;
+    margin: 0.5em;
+    input {
+      &::before {
+        clear: both;
+        display: inline-block;
+        content: "";
+      }
+    }
+  }
+}

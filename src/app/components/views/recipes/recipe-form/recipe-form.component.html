@@ -1,0 +1,132 @@
+<ng-template
+  #rearrangableFormArray
+  let-arrayOfItems="arrayOfItems"
+  let-label="label"
+  let-innerTemplate="innerTemplate"
+  let-controlFunction="controlFunction"
+>
+  <div>
+    <label>
+      {{ label.plural }}
+      <ng-template ngFor let-control [ngForOf]="arrayOfItems" let-i="index">
+        <br />
+        <ng-container
+          *ngTemplateOutlet="innerTemplate; context: { control: control, i: i }"
+        ></ng-container>
+        <span class="reorder-tray">
+          <button
+            class="add"
+            (click)="addArrControl(arrayOfItems, controlFunction, i)"
+          >
+            <fa-icon [icon]="icons.faPlus"></fa-icon>
+          </button>
+          <button class="remove" (click)="removeArrControl(arrayOfItems, i)">
+            <fa-icon [icon]="icons.faTimes"></fa-icon>
+          </button>
+          <button class="move-up" (click)="moveUpArrControl(arrayOfItems, i)">
+            <fa-icon [icon]="icons.faArrowUp"></fa-icon>
+          </button>
+          <button
+            class="move-down"
+            (click)="moveDownArrControl(arrayOfItems, i)"
+          >
+            <fa-icon [icon]="icons.faArrowDown"></fa-icon>
+          </button>
+        </span>
+      </ng-template>
+      <br />
+      <button
+        (click)="
+          addArrControl(arrayOfItems, controlFunction, arrayOfItems.length)
+        "
+      >
+        Add {{ label.singular }}
+      </button>
+    </label>
+  </div>
+</ng-template>
+
+<ng-template #inputSimple let-control="control" let-i="i">
+  <input [formControl]="control" />
+</ng-template>
+
+<ng-template #inputIngredients let-control="control" let-i="i">
+  <span [formGroup]="control">
+    <input
+      class="measure-quantity"
+      [formControl]="control.get('measure.quantity')"
+    />
+    <select class="measure-unit" [formControl]="control.get('measure.unit')">
+      <option value="count">count</option>
+      <option value="cup">cup</option>
+      <option value="oz">oz</option>
+      <option value="fl oz">fl oz</option>
+      <option value="Tbls">Tbls</option>
+      <option value="tps">tps</option>
+    </select>
+    Of
+    <input class="ingredient" [formControl]="control.get('name')" />
+  </span>
+</ng-template>
+
+<form [formGroup]="recipeFormGroup">
+  <label>
+    Recipe Name
+    <br />
+    <input formControlName="name" />
+  </label>
+  <label>
+    URL Slug
+    <br />
+    <input formControlName="slug" />
+  </label>
+  <ng-container
+    *ngTemplateOutlet="
+      rearrangableFormArray;
+      context: {
+        label: { plural: 'Authors', singular: 'Author' },
+        arrayOfItems: formGroups.authors,
+        innerTemplate: inputSimple,
+        controlFunction: createSimpleControl
+      }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      rearrangableFormArray;
+      context: {
+        label: { plural: 'Ingredients', singular: 'Ingredient' },
+        arrayOfItems: formGroups.ingredients,
+        innerTemplate: inputIngredients,
+        controlFunction: createIngredientControl
+      }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      rearrangableFormArray;
+      context: {
+        label: { plural: 'Directions', singular: 'Direction' },
+        arrayOfItems: formGroups.directions,
+        innerTemplate: inputSimple,
+        controlFunction: createSimpleControl
+      }
+    "
+  ></ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      rearrangableFormArray;
+      context: {
+        label: { plural: 'Notes', singular: 'Note' },
+        arrayOfItems: formGroups.notes,
+        innerTemplate: inputSimple,
+        controlFunction: createSimpleControl
+      }
+    "
+  ></ng-container>
+</form>
+
+<hr />
+
+<pre><code>{{recipeFormGroup.value | json}}</code></pre>
+<pre><code>{{recipe | json}}</code></pre>

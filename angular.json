@@ -38,6 +38,10 @@
             "scripts": []
           },
           "configurations": {
+            "development": {
+              "sourceMap": true,
+              "optimization": false
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -69,6 +73,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "defaultConfiguration": "development",
           "options": {
             "browserTarget": "recipe-sharing-client:build",
             "proxyConfig": "proxy.conf.json"
@@ -76,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "recipe-sharing-client:build:production"
+            },
+            "development": {
+              "browserTarget": "recipe-sharing-client:build:development"
             }
           }
         },

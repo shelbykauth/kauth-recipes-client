@@ -3,7 +3,10 @@ import { tap } from 'rxjs/operators';
 import { HasName } from './has-name.type';
 
 export type Ingredient = HasName & {
-  measure: string;
+  measure: {
+    quantity: number;
+    unit: string;
+  };
   name: string;
   link: {
     type: string;
@@ -16,7 +19,7 @@ export type Ingredient = HasName & {
 
 export function IngredientFactory(ingredient: any): Ingredient {
   ingredient.name = ingredient.name || 'Unknown Ingredient';
-  ingredient.measure = ingredient.measure || '1';
+  ingredient.measure = ingredient.measure || { quantity: 1, unit: 'count' };
   ingredient.linkedItem = ingredient.linkedItem || undefined;
 
   if (ingredient.linkedItem instanceof Observable) {
