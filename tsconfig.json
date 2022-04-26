@@ -2,7 +2,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src/",
+    "paths": {
+      "~environment": ["./environments/environment.ts"],
+      "~/*": ["./app/*"],
+      "~services/*": ["./app/services/*"],
+      "~views/*": ["./app/components/views/*"],
+      "~components/*": ["./app/components/*"],
+      "~pipes/*": ["./app/pipes/*"],
+      "~directives/*": ["./app/directives/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -16,15 +25,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"],
-    "paths": {
-      "~/*": ["./src/app/*"],
-      "~services/*": ["./src/app/services/*"],
-      "~views/*": ["./src/app/components/views/*"],
-      "~components/*": ["./src/app/components/*"],
-      "~pipes/*": ["./src/app/pipes/*"],
-      "~directives/*": ["./src/app/directives/*"]
-    }
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

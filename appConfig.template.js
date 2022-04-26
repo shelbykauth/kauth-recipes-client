@@ -1,4 +1,3 @@
-window.ng_AppConfig = window.ng_AppConfig || {};
-window.ng_AppConfig.recipesClient = {
+window.ng_recipesClient_config = {
   apiUrl: "/api/",
 };
