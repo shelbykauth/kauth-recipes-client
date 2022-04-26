@@ -5,8 +5,9 @@ Please include a script, before the angular main.ts, which sets the config for t
 };\`
 `;
 
-export const defaultConfig = {
+export const defaultConfig: AppConfig = {
   apiUrl: '/api/',
+  basehref: '/recipes/',
 };
 
 export function getWindowConfig(): AppConfig {
@@ -18,9 +19,11 @@ export function getWindowConfig(): AppConfig {
   // hand-pick each value
   return {
     apiUrl: windowConfig.apiUrl || defaultConfig.apiUrl,
+    basehref: windowConfig.basehref || defaultConfig.basehref,
   };
 }
 
 export type AppConfig = {
   apiUrl: string;
+  basehref: string;
 };

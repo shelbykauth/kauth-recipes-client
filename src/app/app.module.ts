@@ -5,6 +5,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { environment } from '~environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/views/main/main.component';
@@ -35,7 +36,7 @@ import { RecipeFormComponent } from './components/views/recipes/recipe-form/reci
     ReactiveFormsModule,
     FontAwesomeModule,
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: environment.basehref }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
